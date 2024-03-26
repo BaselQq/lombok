@@ -12,7 +12,7 @@ import java.util.Map;
 public class Course {
 
     private String id;
-    private String name;
+    @With private String name;
     private Teacher teacher;
     private Map<String, Student> student;
 }

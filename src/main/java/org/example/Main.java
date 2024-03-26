@@ -27,5 +27,19 @@ public class Main {
                 .build();
 
         System.out.println(student3);
+
+        studentList.put(UUID.randomUUID().toString(), student3);
+
+        Course course2 = Course.builder()
+                .id(UUID.randomUUID().toString())
+                .name("Sport Course")
+                .teacher(teacher1)
+                .build();
+
+        System.out.println(course2);
+
+        System.out.println("Changing course name using with");
+
+        System.out.println(course2.withName("bla Course"));
     }
 }
