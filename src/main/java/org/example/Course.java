@@ -3,16 +3,16 @@ package org.example;
 import lombok.*;
 
 import java.util.List;
-import java.util.Map;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
 @Builder
+@Value
 public class Course {
 
-    private String id;
-    @With private String name;
-    private Teacher teacher;
-    private Map<String, Student> student;
+    String id;
+    @With String name;
+    Teacher teacher;
+    List<Student> student;
 }
